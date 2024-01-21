@@ -11,6 +11,6 @@ keyboard by [BastardKB](https://bastardkb.com).
 
 ## Keymap
 
-This is my current keymap visualized using my keymap visualzier.
+This is my current keymap visualized using my [keymap visualzier](https://github.com/huber-th/zmk-keymap-visualizer).
 
 ![Scylla Keymap](docs/scylla_keymap.png)

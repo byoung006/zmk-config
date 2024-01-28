@@ -20,7 +20,7 @@
 
         default_layer {
             bindings = <
-&mt TILDE GRAVE                    &mt EXCL KP_NUMBER_1  &mt AT KP_NUMBER_2  &mt POUND KP_NUMBER_3  &mt DOLLAR KP_NUMBER_4  &mt PERCENT KP_NUMBER_5    &mt CARET KP_NUMBER_6  &mt AMPERSAND KP_NUMBER_7  &mt ASTRK KP_NUMBER_8  &mt LEFT_PARENTHESIS KP_NUMBER_9  &mt RIGHT_PARENTHESIS KP_NUMBER_0  &mt MINUS UNDERSCORE
+&mt TILDE GRAVE                    &mt EXCL KP_NUMBER_1  &mt AT KP_NUMBER_2  &mt POUND KP_NUMBER_3  &mt DOLLAR KP_NUMBER_4  &mt PERCENT KP_NUMBER_5    &mt CARET KP_NUMBER_6  &mt AMPERSAND KP_NUMBER_7  &mt ASTRK KP_NUMBER_8  &mt LEFT_PARENTHESIS KP_NUMBER_9  &mt RIGHT_PARENTHESIS KP_NUMBER_0  &mt UNDERSCORE KP_MINUS
 &tog 1                             &kp Q                 &kp W               &kp E                  &kp R                   &kp T                      &kp Y                  &kp U                      &kp I                  &kp O                             &kp P                              &mt PLUS EQUAL
 &kp LEFT_SHIFT                     &kp A                 &kp S               &kp D                  &kp F                   &kp G                      &kp H                  &kp J                      &kp K                  &kp L                             &mt COLON SEMICOLON                &mt DOUBLE_QUOTES SINGLE_QUOTE
 &mt LEFT_CONTROL LEFT_PARENTHESIS  &kp Z                 &kp X               &kp C                  &kp V                   &kp B                      &kp N                  &kp M                      &kp COMMA              &kp DOT                           &mt KP_SLASH QUESTION              &mt RIGHT_SHIFT RIGHT_PARENTHESIS

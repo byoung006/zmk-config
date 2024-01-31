@@ -15,6 +15,15 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        forward-slash {
+            bindings = <&kp KP_SLASH>;
+            key-positions = <47 31>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

@@ -19,7 +19,7 @@
         compatible = "zmk,combos";
 
         forward-slash {
-            bindings = <&kp KP_SLASH>;
+            bindings = <&kp LC(KP_SLASH)>;
             key-positions = <47 31>;
         };
     };

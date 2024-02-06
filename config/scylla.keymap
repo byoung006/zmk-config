@@ -25,6 +25,24 @@
         };
     };
 
+    macros {
+        move_window_left: move_window_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(H)))>, <&macro_tap>, <&kp LS(LG(LEFT))>;
+
+            label = "MOVE_WINDOW_LEFT";
+        };
+
+        move_window_right: move_window_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(L)))>, <&macro_tap>, <&kp LS(LG(RIGHT))>;
+
+            label = "MOVE_WINDOW_RIGHT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

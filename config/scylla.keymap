@@ -41,6 +41,20 @@
 
             label = "MOVE_WINDOW_RIGHT";
         };
+
+        minimize_window: minimize_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(DOWN_ARROW)>;
+            label = "MINIMIZE_WINDOW";
+        };
+
+        maximize_window: maximize_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(UP_ARROW)>;
+            label = "MAXIMIZE_WINDOW";
+        };
     };
 
     keymap {
@@ -59,12 +73,12 @@
 
         symbol_layer {
             bindings = <
-&trans      &trans              &trans  &trans         &trans             &trans          &trans            &trans          &trans           &trans             &trans     &to 2
-&bt BT_CLR  &kp LC(LA(Q))       &trans  &trans         &bt BT_SEL 1       &bt BT_SEL 0    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans     &trans
-&trans      &move_window_right  &trans  &trans         &move_window_left  &trans          &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT          &kp COLON  &trans
-&trans      &trans              &trans  &kp LC(LS(I))  &trans             &trans          &trans            &trans          &trans           &kp BACKSLASH      &kp SLASH  &kp PIPE
-                                        &trans         &trans             &trans          &trans            &trans          &trans
-                                                       &trans             &trans          &trans            &trans
+&move_window_left  &trans         &trans            &trans         &trans            &move_window_right    &trans            &trans          &trans           &trans             &trans     &to 2
+&bt BT_CLR         &kp LC(LA(Q))  &trans            &trans         &bt BT_SEL 1      &bt BT_SEL 0          &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans     &trans
+&trans             &trans         &maximize_window  &trans         &minimize_window  &trans                &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT          &kp COLON  &trans
+&trans             &trans         &trans            &kp LC(LS(I))  &trans            &trans                &trans            &trans          &trans           &kp BACKSLASH      &kp SLASH  &kp PIPE
+                                                    &trans         &trans            &trans                &trans            &trans          &trans
+                                                                   &trans            &trans                &trans            &trans
             >;
         };
 
